@@ -1,0 +1,22 @@
+
+
+.desktopMenu {
+    border: 1px solid red;
+    width: 20vw;
+    height: 100vh;
+}
+
+.navLinks {
+    list-style: none;
+}
+
+.navLinksDesktop {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
