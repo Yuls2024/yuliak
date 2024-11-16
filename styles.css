@@ -28,11 +28,16 @@ body {
 
 .tableMenuBarContainer {
     display: flex;
+    
 }
 
 .tabletMenu {
     border: 2px solid green;
     /*width: 100%;*/
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+    margin: auto;
     display: none;
    
 }
@@ -54,6 +59,20 @@ body {
     align-content: center;
     text-align: center;
     display: none;
+}
+
+.tabletButton {
+    border: 1px solid #059DB9;
+    border-radius: 5px;
+    min-width: 90px;
+    height: 30px;
+    text-align: center;
+    align-content: center;
+    font-size: 12px;
+}
+
+.menuButton {
+    text-transform: uppercase;
 }
 
 #openMenu:target {
@@ -88,7 +107,7 @@ a {
 }
 
 /*Tablet*/
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
     body {
         background-color: aqua;
         padding: 20px;
@@ -111,7 +130,7 @@ a {
 
 
 /*Mobile*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     body {
         background-color: pink;
         padding: 10px;
