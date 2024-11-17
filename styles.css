@@ -50,14 +50,16 @@ body {
 }
 
 .mobileMenu {
-    width: 200px;
-    height: 200px;
-    border: 2px solid blue;
+    width: 300px;
+    height: 250px;
+    border: 1px solid #059DB9;
+    border-radius: 10px;
     position: absolute;
-    top: 50px;
-    left: 30%;
+    top: 70px;
+    left: 20%;
     align-content: center;
     text-align: center;
+    line-height: 25px;
     display: none;
 }
 
@@ -73,8 +75,13 @@ body {
     margin-left: 10px;
 }
 
+.mobileButton {
+   font-weight: bold;
+}
+
 .menuButton {
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 #openMenu:target {
@@ -83,6 +90,7 @@ body {
 
 .navLinks {
     list-style: none;
+    color: white;
 }
 
 .navLinksTablet {
@@ -106,6 +114,7 @@ body {
 
 a {
     text-decoration: none;
+    /*color: white;*/
 }
 
 /*Tablet*/
