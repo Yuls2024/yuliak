@@ -28,11 +28,11 @@ body {
 
 .tableMenuBarContainer {
     display: flex;
-    
+    gap: 10px;
 }
 
 .tabletMenu {
-    border: 2px solid green;
+    /*border: 2px solid green;*/
     /*width: 100%;*/
     align-items: center;
     box-sizing: border-box;
