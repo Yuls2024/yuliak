@@ -6,7 +6,7 @@
 
 body {
     padding: 30px;
-    /*background-color: black;*/
+    background-color: black;
 }
 
 
@@ -21,7 +21,7 @@ body {
     display: flex;
     /*width: 100vw;*/
     width: 100%;
-    background-color: yellow;
+    /*background-color: yellow;*/
     align-items: center;
     justify-content: space-between;
 }
@@ -43,9 +43,10 @@ body {
 }
 
 .desktopMenu {
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     /*width: 20vw;*/
-    width: 15vw;
+    /*width: 15vw;*/
+    width: 155px;
     height: 100vh;
     padding-top: 30px;
     /*display: none;*/
@@ -112,6 +113,9 @@ body {
 
 .navLinks {
     list-style: none;
+}
+
+.navLinks a {
     color: white;
 }
 
@@ -142,7 +146,7 @@ a {
 /*Tablet*/
 @media only screen and (max-width: 1000px) {
     body {
-        background-color: aqua;
+        /*background-color: aqua;*/
         padding: 20px;
     }
 
@@ -165,7 +169,7 @@ a {
 /*Mobile*/
 @media only screen and (max-width: 700px) {
     body {
-        background-color: pink;
+        /*background-color: pink;*/
         padding: 10px;
     }
 
