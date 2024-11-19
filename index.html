@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
-    <header>     
-        <nav class="topNavigation">
-            <div class="tableMenuBarContainer">
-                <div class="logoContainer">
-                    <img class="logo" src="./images/logoYK.jpg" alt="Logo">
+    <div class="webPageContainer">
+        <header >
+            <nav class="topNavigation">
+                <div class="tableMenuBarContainer">
+                    <div class="logoContainer">
+                        <img class="logo" src="./images/logoYK.jpg" alt="Logo">
+                    </div>
+                    <div class="tabletMenu">
+                        <ul class="navLinks navLinksTablet">
+                            <li class="tabletButton menuButton"><a href="index.html">Home</a></li>
+                            <li class="tabletButton menuButton"><a href="about.html">About Me</a></li>
+                            <li class="tabletButton menuButton"><a href="services.html">Services</a></li>
+                            <li class="tabletButton menuButton"><a href="skills.html">Skills</a></li>
+                            <li class="tabletButton menuButton"><a href="portfolio.html">Portfolio</a></li>
+                            <li class="tabletButton menuButton"><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="tabletMenu">
-                    <ul class="navLinks navLinksTablet">
-                        <li class="tabletButton menuButton"><a href="index.html">Home</a></li>
-                        <li class="tabletButton menuButton"><a href="about.html">About Me</a></li>
-                        <li class="tabletButton menuButton"><a href="services.html">Services</a></li>
-                        <li class="tabletButton menuButton"><a href="skills.html">Skills</a></li>
-                        <li class="tabletButton menuButton"><a href="portfolio.html">Portfolio</a></li>
-                        <li class="tabletButton menuButton"><a href="contact.html">Contact</a></li>
-                    </ul>
+                <div>
+                    <a href="#openMenu">
+                        <img class="hamburger" src="./images/hamburger.png" alt="Hamburger Icon">
+                    </a>
                 </div>
-            </div>
-            <div>
-                <a href="#openMenu">
-                    <img class="hamburger" src="./images/hamburger.png" alt="Hamburger Icon">
-                </a>
-            </div>
-        </nav>
+            </nav>
             <div class="desktopMenu">
                 <ul class="navLinks navLinksDesktop">
                     <li class="desktopButton menuButton">
@@ -38,19 +41,24 @@
                     </li>
                     <li class="desktopButton menuButton">
                         <img class="desktopButtorDecor" src="./images/buttonDecor.jpg" alt="Button Decoration">
-                        <a href="about.html">About Me</a></li>
+                        <a href="about.html">About Me</a>
+                    </li>
                     <li class="desktopButton menuButton">
                         <img class="desktopButtorDecor" src="./images/buttonDecor.jpg" alt="Button Decoration">
-                        <a href="services.html">Services</a></li>
+                        <a href="services.html">Services</a>
+                    </li>
                     <li class="desktopButton menuButton">
                         <img class="desktopButtorDecor" src="./images/buttonDecor.jpg" alt="Button Decoration">
-                        <a href="skills.html">Skills</a></li>
+                        <a href="skills.html">Skills</a>
+                    </li>
                     <li class="desktopButton menuButton">
                         <img class="desktopButtorDecor" src="./images/buttonDecor.jpg" alt="Button Decoration">
-                        <a href="portfolio.html">Portfolio</a></li>
+                        <a href="portfolio.html">Portfolio</a>
+                    </li>
                     <li class="desktopButton menuButton">
                         <img class="desktopButtorDecor" src="./images/buttonDecor.jpg" alt="Button Decoration">
-                        <a href="contact.html">Contact</a></li>
+                        <a href="contact.html">Contact</a>
+                    </li>
                 </ul>
             </div>
             <div id="openMenu" class="mobileMenu">
@@ -63,8 +71,13 @@
                     <li class="mobileButton menuButton"><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
-    </header>
-    <main></main>
+        </header>
+
+        <main class="pageContent">
+            <h1>Home</h1>
+        </main>
+    </div>
     <!--<script src="script.js"></script>-->
 </body>
+
 </html>
