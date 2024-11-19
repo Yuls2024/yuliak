@@ -119,6 +119,10 @@ body {
     color: white;
 }
 
+.navLinks a:hover {
+    color: #059DB9;
+}
+
 .navLinksTablet {
     display: flex;
     justify-content: space-between;
