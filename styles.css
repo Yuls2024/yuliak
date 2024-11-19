@@ -209,8 +209,9 @@ h1 {
 }
 
 .pageContent {
-    width: 400px;
-    height: 400px;
+    /*width: 400px;*/
+    height: 90vh;
+    flex-grow: 1;
     border: 1px solid red;
 }
 
