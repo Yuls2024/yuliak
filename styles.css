@@ -154,6 +154,7 @@ h1 {
     color: white;
 }
 
+/*Desktop Grid for Index.html*/
 .gridContainer {
     display: grid;
     height: 80vh;
@@ -163,6 +164,75 @@ h1 {
         "text image"
         "button image";
     gap: 0.2rem;
+}
+
+.title {
+    /*width: 30vw;*/
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: purple;
+    grid-area: title;
+}
+
+.image {
+    background-color: blue;
+    grid-area: image;
+}
+
+.text {
+    background-color: pink;
+    grid-area: text;
+}
+
+.button {
+    background-color: lime;
+    grid-area: button;
+}
+
+img {
+    object-fit: cover;
+}
+
+/*Desktop Grid Container for the About Me page*/
+.gridContainerAbout {
+    display: grid;
+    height: 80vh;
+    grid-template-columns: 1fr 1fr; /* Left column 1fr, Right column 2fr */
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "aboutTitle aboutTitle"
+        "aboutText aboutImage"
+        "aboutPurposeTitle aboutPurposeTitle"
+        "aboutPurposeText aboutPurposeText";
+    gap: 0.2rem;
+}
+
+.aboutTitle {
+    /*width: 30vw;*/
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: lime;
+    grid-area: aboutTitle;
+}
+
+.aboutImage {
+    background-color: aqua;
+    grid-area: aboutImage;
+}
+
+.aboutText {
+    background-color: violet;
+    grid-area: aboutText;
+}
+
+.aboutPurposeTitle {
+    background-color: yellow;
+    grid-area: aboutPurposeTitle;
+}
+
+.aboutPurposeText {
+    background-color: orange;
+    grid-area: aboutPurposeText;
 }
 
 
@@ -228,6 +298,18 @@ h1 {
     .hamburger {
         display: block;
     }
+
+    .gridContainerAbout {
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "aboutTitle"
+            "aboutImage"
+            "aboutText"
+            "aboutPurposeTitle"
+            "aboutPurposeText";
+        gap: 0.2rem;
+    }
 }
 
 .pageContent {
@@ -238,72 +320,7 @@ h1 {
     border: 1px solid red;
 }
 
-.title {
-    /*width: 30vw;*/
-    font-size: 16px;
-    text-transform: uppercase;
-    background-color: purple;
-    grid-area: title;
-}
-
-.image {
-    /*width: 100%;*/
-    /*width: 600px;
-    height: 600px;*/
-    background-color: blue;
-    grid-area: image;
-}
-
-.text {
-    background-color: pink;
-    grid-area: text;
-}
-
-.button {
-    background-color: lime;
-    grid-area: button;
-}
-
-
-
-/*.gridContainer {
-    display: grid;
-    height: 80vh;
-    grid-template-columns: 1fr 1fr; 
-    grid-template-areas:
-        "title image"
-        "text image"
-        "button image";
-    gap: 0.2rem;
-}*/
-
-/*.title {
-    font-size: 16px;
-    text-transform: uppercase;
-    background-color: purple;
-    grid-area: title;
-}*/
-
-/*.image {
-    background-color: blue;
-    grid-area: image;
-}*/
-
-/*.text {
-    background-color: pink;
-    grid-area: text;
-}
-
-.button {
-    background-color: lime;
-    grid-area: button;
-}*/
-
-
-
-img {
-    object-fit: cover;
-}
+/*------------------------------*/
 
 
 /*@media screen and (min-width: 601px) and (max-width: 1400px) {
