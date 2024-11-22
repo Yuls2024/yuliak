@@ -42,7 +42,7 @@ body {
     justify-content: center;
     margin: auto;
     display: none;
-   
+
 }
 
 .desktopMenu {
@@ -102,7 +102,7 @@ body {
 }
 
 .mobileButton {
-   font-weight: bold;
+    font-weight: bold;
 }
 
 .menuButton {
@@ -158,7 +158,8 @@ h1 {
 .gridContainer {
     display: grid;
     height: 80vh;
-    grid-template-columns: 1fr 1fr; /* Left column 1fr, Right column 2fr */
+    grid-template-columns: 1fr 1fr;
+    /* Left column 1fr, Right column 2fr */
     grid-template-areas:
         "title image"
         "text image"
@@ -197,7 +198,8 @@ img {
 .gridContainerAbout {
     display: grid;
     height: 80vh;
-    grid-template-columns: 1fr 1fr; /* Left column 1fr, Right column 2fr */
+    grid-template-columns: 1fr 1fr;
+    /* Left column 1fr, Right column 2fr */
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas:
         "aboutTitle aboutTitle"
@@ -239,7 +241,7 @@ img {
 .gridContainerServices {
     display: grid;
     height: 80vh;
-    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas:
         "servicesTitle servicesTitle servicesTitle"
@@ -301,6 +303,61 @@ img {
     grid-area: serviceText03;
 }
 
+/*Desktop Grid Container for the Skills page*/
+.gridContainerSkills {
+    display: grid;
+    height: 80vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "skillsTitle skillsTitle skillsTitle skillsTitle skillsTitle skillsTitle"
+        "skillsEducation skillsEducation skillsSkills skillsSkills skillsTools skillsTools"
+        "skillsRealWorld skillsRealWorld skillsRealWorld skillsSchool skillsSchool skillsSchool ";
+    gap: 0.2rem;
+}
+
+
+
+.skillsTitle {
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: purple;
+    grid-area: skillsTitle;
+}
+
+.skillsEducation {
+    background-color: red;
+    grid-area: skillsEducation;
+}
+
+.skillsSkills {
+    background-color: orange;
+    grid-area: skillsSkills;
+}
+
+.skillsTools {
+    background-color: yellow;
+    grid-area: skillsTools;
+}
+
+.skillsRealWorld {
+    background-color: lime;
+    grid-area: skillsRealWorld;
+}
+
+.skillsSchool {
+    background-color: aqua;
+    grid-area: skillsSchool;
+}
+
+
+
+
+
+
+
+
+
 
 /*Tablet*/
 @media only screen and (max-width: 1000px) {
@@ -328,7 +385,7 @@ img {
     }
 
     .gridContainer {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
         grid-template-areas:
             "title"
             "image"
@@ -338,20 +395,30 @@ img {
     }
 
     /*tablet*/
-.gridContainerServices {
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-        "servicesTitle servicesTitle"
-        "servicesImage01 serviceTitle01"
-        "servicesImage01 serviceText01"
-        "serviceTitle02 servicesImage02"
-        "serviceText02  servicesImage02"
-        "servicesImage03 serviceTitle03"
-        "servicesImage03 serviceText03";
-}
+    .gridContainerServices {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "servicesTitle servicesTitle"
+            "servicesImage01 serviceTitle01"
+            "servicesImage01 serviceText01"
+            "serviceTitle02 servicesImage02"
+            "serviceText02  servicesImage02"
+            "servicesImage03 serviceTitle03"
+            "servicesImage03 serviceText03";
+    }
 
-   
+    /*Tablet Grid Container for the Skills page*/
+    .gridContainerSkills {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "skillsTitle skillsTitle"
+            "skillsEducation skillsTools"
+            "skillsSkills skillsSkills "
+            "skillsRealWorld skillsRealWorld"
+            "skillsSchool skillsSchool ";
+    }
 
 
 }
@@ -383,7 +450,7 @@ img {
     }
 
     .gridContainerAbout {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas:
             "aboutTitle"
@@ -394,21 +461,34 @@ img {
         gap: 0.2rem;
     }
 
-     /*mobile*/
-     .gridContainerServices {
-        grid-template-columns: 1fr; 
+    /*mobile*/
+    .gridContainerServices {
+        grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas:
             "servicesTitle"
-            "servicesImage01" 
+            "servicesImage01"
             "serviceTitle01"
             "serviceText01"
             "servicesImage02"
             "serviceTitle02"
             "serviceText02"
-            "servicesImage03" 
+            "servicesImage03"
             "serviceTitle03"
             "serviceText03";
+    }
+
+    /*Mobile Grid Container for the Skills page*/
+    .gridContainerSkills {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "skillsTitle"
+            "skillsEducation"
+            "skillsTools"
+            "skillsSkills"
+            "skillsRealWorld"
+            "skillsSchool";
     }
 }
 
@@ -416,7 +496,7 @@ img {
     /*width: 400px;*/
     height: 85vh;
     flex-grow: 1;
-   
+
     border: 1px solid red;
 }
 
@@ -434,4 +514,3 @@ img {
         display: none !important;
     }
 }
-
