@@ -235,6 +235,72 @@ img {
     grid-area: aboutPurposeText;
 }
 
+/*Desktop Grid Container for the Services page*/
+.gridContainerServices {
+    display: grid;
+    height: 80vh;
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "servicesTitle servicesTitle servicesTitle"
+        "servicesImage01 servicesImage02 servicesImage03"
+        "serviceTitle01 serviceTitle02 serviceTitle03"
+        "serviceText01 serviceText02 serviceText03";
+    gap: 0.2rem;
+}
+
+.servicesTitle {
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: pink;
+    grid-area: servicesTitle;
+}
+
+.servicesImage01 {
+    background-color: aqua;
+    grid-area: servicesImage01;
+}
+
+.servicesImage02 {
+    background-color: aqua;
+    grid-area: servicesImage02;
+}
+
+.servicesImage03 {
+    background-color: aqua;
+    grid-area: servicesImage03;
+}
+
+.serviceTitle01 {
+    background-color: yellow;
+    grid-area: serviceTitle01;
+}
+
+.serviceTitle02 {
+    background-color: yellow;
+    grid-area: serviceTitle02;
+}
+
+.serviceTitle03 {
+    background-color: yellow;
+    grid-area: serviceTitle03;
+}
+
+.serviceText01 {
+    background-color: orange;
+    grid-area: serviceText01;
+}
+
+.serviceText02 {
+    background-color: orange;
+    grid-area: serviceText02;
+}
+
+.serviceText03 {
+    background-color: orange;
+    grid-area: serviceText03;
+}
+
 
 /*Tablet*/
 @media only screen and (max-width: 1000px) {
@@ -270,6 +336,23 @@ img {
             "button";
         gap: 0.2rem;
     }
+
+    /*tablet*/
+.gridContainerServices {
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "servicesTitle servicesTitle"
+        "servicesImage01 serviceTitle01"
+        "servicesImage01 serviceText01"
+        "serviceTitle02 servicesImage02"
+        "serviceText02  servicesImage02"
+        "servicesImage03 serviceTitle03"
+        "servicesImage03 serviceText03";
+}
+
+   
+
 
 }
 
@@ -309,6 +392,23 @@ img {
             "aboutPurposeTitle"
             "aboutPurposeText";
         gap: 0.2rem;
+    }
+
+     /*mobile*/
+     .gridContainerServices {
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "servicesTitle"
+            "servicesImage01" 
+            "serviceTitle01"
+            "serviceText01"
+            "servicesImage02"
+            "serviceTitle02"
+            "serviceText02"
+            "servicesImage03" 
+            "serviceTitle03"
+            "serviceText03";
     }
 }
 
