@@ -351,11 +351,87 @@ img {
 }
 
 
+/*Desktop Grid Container for the Portfolio page*/
+.gridContainerPortfolio {
+    display: grid;
+    height: 80vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "portfolioTitle portfolioTitle portfolioTitle"
+        "portfolioImage01 portfolioImage02 portfolioImage03"
+        "projectTitle01 projectTitle02 projectTitle03"
+        "portfolioImage04 portfolioImage05 portfolioImage06"
+        "projectTitle04 projectTitle05 projectTitle06";
+    gap: 0.2rem;
+}
 
+.portfolioTitle {
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: green;
+    grid-area: portfolioTitle;
+}
 
+.portfolioImage01 {
+    background-color: yellow;
+    grid-area: portfolioImage01;
+}
 
+.portfolioImage02 {
+    background-color: lightblue;
+    grid-area: portfolioImage02;
+}
 
+.portfolioImage03 {
+    background-color: aqua;
+    grid-area: portfolioImage03;
+}
 
+.portfolioImage04 {
+    background-color: yellow;
+    grid-area: portfolioImage04;
+}
+
+.portfolioImage05 {
+    background-color: lightblue;
+    grid-area: portfolioImage05;
+}
+
+.portfolioImage06 {
+    background-color: aqua;
+    grid-area: portfolioImage06;
+}
+
+.projectTitle01 {
+    background-color: purple;
+    grid-area: projectTitle01;
+}
+
+.projectTitle02 {
+    background-color: red;
+    grid-area: projectTitle02;
+}
+
+.projectTitle03 {
+    background-color: orange;
+    grid-area: projectTitle03;
+}
+
+.projectTitle04 {
+    background-color: purple;
+    grid-area: projectTitle04;
+}
+
+.projectTitle05 {
+    background-color: red;
+    grid-area: projectTitle05;
+}
+
+.projectTitle06 {
+    background-color: orange;
+    grid-area: projectTitle06;
+}
 
 
 
@@ -420,6 +496,21 @@ img {
             "skillsSchool skillsSchool ";
     }
 
+    /*Tablet Grid Container for the Portfolio page*/
+    .gridContainerPortfolio {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "portfolioTitle portfolioTitle"
+            "portfolioImage01 portfolioImage02"
+            "projectTitle01 projectTitle02"
+            "portfolioImage03 portfolioImage04"
+            "projectTitle03 projectTitle04"
+            "portfolioImage05 portfolioImage06"
+            "projectTitle05 projectTitle06";
+    }
+
+    
 
 }
 
@@ -489,6 +580,26 @@ img {
             "skillsSkills"
             "skillsRealWorld"
             "skillsSchool";
+    }
+
+    /*Mobile Grid Container for the Portfolio page*/
+    .gridContainerPortfolio {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "portfolioTitle"
+            "portfolioImage01"
+            "projectTitle01"
+            "portfolioImage02"
+            "projectTitle02"
+            "portfolioImage03"
+            "projectTitle03"
+            "portfolioImage04"
+            "projectTitle04"
+            "portfolioImage05"
+            "projectTitle05"
+            "portfolioImage06"
+            "projectTitle06";
     }
 }
 
