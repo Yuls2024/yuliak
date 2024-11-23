@@ -433,7 +433,63 @@ img {
     grid-area: projectTitle06;
 }
 
+/*Desktop Grid Container for the Contact page*/
+.gridContainerContact {
+    display: grid;
+    height: 80vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "contactTitle contactTitle contactTitle"
+        "contactMessage contactMessage contactMessage"
+        "contactName contactMessageBox contactMessageBox"
+        "contactEmail contactMessageBox contactMessageBox"
+        "contactSubject contactMessageBox contactMessageBox"
+        "contactSubmitButton contactSubmitButton contactSubmitButton"
+        "socialMedia socialMedia socialMedia";
+    gap: 0.2rem;
+}
 
+.contactTitle {
+    background-color: violet;
+    grid-area: contactTitle;
+}
+
+.contactMessage {
+    background-color: purple;
+    grid-area: contactMessage;
+}
+
+.contactName {
+    background-color: red;
+    grid-area: contactName;
+}
+
+.contactMessageBox {
+    background-color: orange;
+    grid-area: contactMessageBox;
+}
+
+.contactEmail {
+    background-color: yellow;
+    grid-area: contactEmail;
+}
+
+.contactSubject {
+    background-color: lime;
+    grid-area: contactSubject;
+}
+
+.contactSubmitButton {
+    background-color: aqua;
+    grid-area: contactSubmitButton;
+}
+
+.socialMedia {
+    background-color: blueviolet;
+    grid-area: socialMedia;
+
+}
 
 /*Tablet*/
 @media only screen and (max-width: 1000px) {
@@ -510,7 +566,23 @@ img {
             "projectTitle05 projectTitle06";
     }
 
-    
+    /*Tablet & Mobile Grid Container for the Contact page*/
+    .gridContainerContact {
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "contactTitle"
+            "contactMessage"
+            "contactName"
+            "contactEmail"
+            "contactSubject"
+            "contactMessageBox"
+            "contactMessageBox"
+            "contactMessageBox"
+            "contactSubmitButton"
+            "socialMedia";
+    }
 
 }
 
