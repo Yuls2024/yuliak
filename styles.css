@@ -164,6 +164,8 @@ h1 {
     /*border: 1px solid red;*/
 }
 
+/*Desktop*/
+
 /*Desktop Grid for Index.html*/
 .gridContainer {
     display: grid;
@@ -293,66 +295,112 @@ img {
 /*Desktop Grid Container for the Services page*/
 .gridContainerServices {
     display: grid;
-    height: 80vh;
+    height: 60vh;
+    place-items: center;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 0.5fr 1fr;
     grid-template-areas:
         "servicesTitle servicesTitle servicesTitle"
         "servicesImage01 servicesImage02 servicesImage03"
         "serviceTitle01 serviceTitle02 serviceTitle03"
         "serviceText01 serviceText02 serviceText03";
-    gap: 0.2rem;
+    gap: 1.5rem;
 }
 
 .servicesTitle {
     font-size: 16px;
     text-transform: uppercase;
-    background-color: pink;
+    /*background-color: pink;*/
+    align-self: start;
     grid-area: servicesTitle;
 }
 
+.allServicesImages {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
 .servicesImage01 {
-    background-color: aqua;
+    /*background-color: aqua;*/
+    width: 250px;
+    height: 200px;
+    align-self: start;
     grid-area: servicesImage01;
 }
 
+/*.servicesImage01 {
+    width: 350px;
+    height: 250px;
+}*/
+
 .servicesImage02 {
-    background-color: aqua;
+    /*background-color: aqua;*/
+    width: 250px;
+    height: 200px;
+    align-self: start;
     grid-area: servicesImage02;
 }
 
 .servicesImage03 {
-    background-color: aqua;
+    /*background-color: aqua;*/
+    width: 250px;
+    height: 200px;
+    align-self: start;
     grid-area: servicesImage03;
 }
 
+/*Styling for all service titles*/
+.serviceTitles {
+    text-align: center;
+    padding: 0 5%;
+}
+
 .serviceTitle01 {
-    background-color: yellow;
+    /*background-color: yellow;*/
+    /*border: 1px solid red;*/
+    align-self: start;
     grid-area: serviceTitle01;
 }
 
 .serviceTitle02 {
-    background-color: yellow;
+    /*background-color: yellow;*/
+    align-self: start;
     grid-area: serviceTitle02;
 }
 
 .serviceTitle03 {
-    background-color: yellow;
+    /*background-color: yellow;*/
+    align-self: start;
     grid-area: serviceTitle03;
 }
 
+/*All service texts */
+.allServiceTexts {
+    max-width: 250px;
+    text-align: center;
+    font-size: 22px;
+    color: white;
+}
+
 .serviceText01 {
-    background-color: orange;
+    /*background-color: orange;*/
+    align-self: start;
     grid-area: serviceText01;
 }
 
 .serviceText02 {
-    background-color: orange;
+    /*background-color: orange;*/
+    align-self: start;
+    max-width: 200px;
     grid-area: serviceText02;
 }
 
 .serviceText03 {
-    background-color: orange;
+    /*background-color: orange;*/
+    align-self: start;
+    max-width: 200px;
     grid-area: serviceText03;
 }
 
@@ -544,6 +592,29 @@ img {
 
 }
 
+/*Desktop view*/
+@media (min-width: 1001px) and (max-width: 1560px) {
+
+    .servicesImage01 {
+        width: 250px !important;
+        height: 200px !important;
+        align-self: start;
+    }
+
+    .servicesImage02 {
+        width: 250px !important;
+        height: 200px !important;
+        align-self: start;
+    }
+
+    .servicesImage03 {
+        width: 250px !important;
+        height: 200px !important;
+        align-self: start;
+    }
+
+}
+
 /*Tablet*/
 @media only screen and (max-width: 1000px) {
     body {
@@ -631,6 +702,75 @@ img {
             "serviceText02  servicesImage02"
             "servicesImage03 serviceTitle03"
             "servicesImage03 serviceText03";
+    }
+
+    .serviceTitles {
+        text-align: center;
+        /*background-color: pink;*/
+    }
+
+    .serviceTitle01 {
+        /*background-color: yellow;*/
+        text-align:left;
+        align-self: end;
+    }
+
+    .serviceTitle02 {
+        /*background-color: yellow;*/
+        align-self: end;
+    }
+
+    .serviceTitle03 {
+        /*background-color: yellow;*/
+        align-self: end;
+    }
+
+    .allServicesImages {
+        border-radius: 35px;
+    }
+
+    /*tablet*/
+    .servicesImage01 {
+        width: 350px;
+        height: 250px;
+        align-self: end;
+    }
+
+    .servicesImage02 {
+        width: 350px;
+        height: 250px;
+        align-self: end;
+    }
+
+    .servicesImage03 {
+        width: 350px;
+        height: 250px;
+        align-self: end;
+    }
+
+    /*All service texts */
+    .allServiceTexts {
+        max-width: 100%;
+        text-align: left;
+        font-size: 22px;
+        color: white;
+    }
+
+    .serviceText01 {
+        /*background-color: orange;*/
+        /*align-self: start;*/
+    }
+    
+    .serviceText02 {
+        /*background-color: orange;*/
+        /*align-self: start;*/
+        max-width: 100%;
+    }
+    
+    .serviceText03 {
+        /*background-color: orange;*/
+       /*align-self: start;*/
+        max-width: 100%;
     }
 
     /*Tablet Grid Container for the Skills page*/
@@ -740,6 +880,13 @@ img {
             "servicesImage03"
             "serviceTitle03"
             "serviceText03";
+    }
+
+     /*Mobile*/
+     .allServiceTexts {
+        max-width: 350px;
+        text-align: center;
+        /*font-size: 22px;*/
     }
 
     /*Mobile Grid Container for the Skills page*/
