@@ -154,6 +154,16 @@ h1 {
     color: white;
 }
 
+/*Desktop*/
+.pageContent {
+    /*width: 400px;*/
+    height: 80vh;
+    flex-grow: 1;
+    margin: 50px 100px;
+
+    /*border: 1px solid red;*/
+}
+
 /*Desktop Grid for Index.html*/
 .gridContainer {
     display: grid;
@@ -695,6 +705,14 @@ img {
         display: block;
     }
 
+    /*Mobile*/
+    .pageContent {
+        /*margin: 30px 3%;*/
+        width: 80vw;
+        margin: 30px auto;
+        /*border: 1px solid red*/
+    }
+
     .gridContainerAbout {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -758,15 +776,6 @@ img {
     }
 }
 
-/*Desktop*/
-.pageContent {
-    /*width: 400px;*/
-    height: 80vh;
-    flex-grow: 1;
-    margin: 50px 100px;
-
-    /*border: 1px solid red;*/
-}
 
 
 
