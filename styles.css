@@ -335,6 +335,8 @@ img {
         "serviceTitle01 serviceTitle02 serviceTitle03"
         "serviceText01 serviceText02 serviceText03";
     gap: 1.5rem;
+
+    justify-content: center;
 }
 
 .servicesTitle {
