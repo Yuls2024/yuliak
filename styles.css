@@ -245,15 +245,25 @@ img {
     max-width: 350px;
     font-size: 30px;
     text-align: left;
-    color: #059DB9
+    color: #059DB9;
+    text-transform: uppercase;
+}
+
+.aboutHeader {
+    font-size: 30px;
+    text-align: center;
+    color: #059DB9;
+    text-transform: uppercase;
+    /*border: 1px solid red;*/
 }
 
 
 /*Desktop Grid Container for the About Me page*/
 .gridContainerAbout {
     display: grid;
-    height: 80vh;
-    grid-template-columns: 1fr 1fr;
+    height: 70vh;
+    width: 100%;
+    grid-template-columns: 1.5fr 1fr;
     /* Left column 1fr, Right column 2fr */
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas:
@@ -261,34 +271,54 @@ img {
         "aboutText aboutImage"
         "aboutPurposeTitle aboutPurposeTitle"
         "aboutPurposeText aboutPurposeText";
-    gap: 0.2rem;
+    gap: 1rem;
+    justify-content: center;
 }
 
 .aboutTitle {
     /*width: 30vw;*/
     font-size: 16px;
     text-transform: uppercase;
-    background-color: lime;
+    /*background-color: lime;*/
+    justify-self: center;
     grid-area: aboutTitle;
 }
 
 .aboutImage {
-    background-color: aqua;
+    /*background-color: aqua;*/
+    width: 100%;
+    max-width: 350px;
+    min-width: 285px;
+    justify-self: center;
     grid-area: aboutImage;
 }
 
+/*All about texts */
+.allAboutTexts {
+    /*max-width: 250px;
+    text-align: center;*/
+    font-size: 22px;
+    color: white;
+}
+
 .aboutText {
-    background-color: violet;
+    /*background-color: violet;*/
+
+    width: 100%;
+    max-width: 605px;
+    min-width: 420px;
+
     grid-area: aboutText;
 }
 
 .aboutPurposeTitle {
-    background-color: yellow;
+    /*background-color: yellow;*/
+    justify-self: center;
     grid-area: aboutPurposeTitle;
 }
 
 .aboutPurposeText {
-    background-color: orange;
+    /*background-color: orange;*/
     grid-area: aboutPurposeText;
 }
 
@@ -383,6 +413,8 @@ img {
     font-size: 22px;
     color: white;
 }
+
+
 
 .serviceText01 {
     /*background-color: orange;*/
@@ -854,6 +886,7 @@ img {
     }
 
     .gridContainerAbout {
+        /*width: 285px;*/
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas:
@@ -862,7 +895,33 @@ img {
             "aboutText"
             "aboutPurposeTitle"
             "aboutPurposeText";
-        gap: 0.2rem;
+
+    }
+
+    /*Mobile*/
+    .aboutText {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 285px;
+        min-width: 285px;
+    }
+
+    /*Mobile*/
+    .aboutPurposeText {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 285px;
+        min-width: 285px;
+    }
+
+    /*Mobile*/
+    .aboutImage {
+        /*background-color: aqua;*/
+        width: 100%;
+        max-width: 285px;
+        min-width: 260px;
+        justify-self: center;
+        grid-area: aboutImage;
     }
 
     /*mobile*/
