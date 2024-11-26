@@ -257,6 +257,13 @@ img {
     /*border: 1px solid red;*/
 }
 
+.skillsHeader {
+    font-size: 30px;
+    text-align: center;
+    color: #059DB9;
+    text-transform: uppercase;
+}
+
 
 /*Desktop Grid Container for the About Me page*/
 .gridContainerAbout {
@@ -271,7 +278,7 @@ img {
         "aboutText aboutImage"
         "aboutPurposeTitle aboutPurposeTitle"
         "aboutPurposeText aboutPurposeText";
-    gap: 1rem;
+    gap: 1.5rem;
     justify-content: center;
 }
 
@@ -441,37 +448,74 @@ img {
 /*Desktop Grid Container for the Skills page*/
 .gridContainerSkills {
     display: grid;
-    height: 80vh;
+    height: 60vh;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 1fr 1fr;
     grid-template-areas:
         "skillsTitle skillsTitle skillsTitle skillsTitle skillsTitle skillsTitle"
         "skillsEducation skillsEducation skillsSkills skillsSkills skillsTools skillsTools"
         "skillsRealWorld skillsRealWorld skillsRealWorld skillsSchool skillsSchool skillsSchool ";
-    gap: 0.2rem;
+    gap: 2rem;
+
+    justify-content: center;
+   
 }
-
-
 
 .skillsTitle {
     font-size: 16px;
     text-transform: uppercase;
     background-color: purple;
+    width: 100%;
+    border: 1px solid red;
     grid-area: skillsTitle;
+}
+
+.educationBox, .skillsBox, .toolsBox {
+    width: 300px;
+    height: 250px;
+    border: 1px solid white;
+    padding: 20px auto;
+    border-radius: 20px;
+}
+
+.realWorldBox, .schoolProjectBox {
+    width: 100%;
+    height: 250px;
+    border: 1px solid white;
+    padding: 20px auto;
+    border-radius: 20px;
+}
+
+.educationTitle, .skillsBoxTitle, .toolsTitle, .realWorldTitle, .schoolProjectTitle {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.educationContent, .skillsContent, .toolsContent, .realWorldContent, .schoolProjectContent {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 18px;
+    color: white;
+    /*padding: 10px 0;*/
+    border: 1px solid yellow;
 }
 
 .skillsEducation {
     background-color: red;
+    justify-content: center;
+    margin: 0 auto;
     grid-area: skillsEducation;
 }
 
 .skillsSkills {
     background-color: orange;
+    margin: 0 auto;
     grid-area: skillsSkills;
 }
 
 .skillsTools {
-    background-color: yellow;
+    background-color: pink;
+    margin: 0 auto;
     grid-area: skillsTools;
 }
 
@@ -817,6 +861,11 @@ img {
             "skillsSkills skillsSkills "
             "skillsRealWorld skillsRealWorld"
             "skillsSchool skillsSchool ";
+    }
+
+    /*tablet*/    
+   .skillsBox{
+        width: 630px;
     }
 
     /*Tablet Grid Container for the Portfolio page*/
