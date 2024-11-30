@@ -641,36 +641,51 @@ img {
         "contactSubject contactMessageBox contactMessageBox"
         "contactSubmitButton contactSubmitButton contactSubmitButton"
         "socialMedia socialMedia socialMedia";
-    gap: 0.2rem;
+    gap: 1rem;
+     
 }
 
+.contactHeader {
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 30px;
+}
+
+
+
 .contactTitle {
-    background-color: violet;
+    /*background-color: violet;*/
+    justify-content: center;
     grid-area: contactTitle;
 }
 
 .contactMessage {
-    background-color: purple;
+    /*background-color: purple;*/
+    text-transform: uppercase;
+    color: white;
+    font-size: 30px;
+    text-align: center;
     grid-area: contactMessage;
 }
 
 .contactName {
-    background-color: red;
+    /*background-color: red;*/
     grid-area: contactName;
 }
 
 .contactMessageBox {
-    background-color: orange;
+    /*background-color: orange;*/
     grid-area: contactMessageBox;
 }
 
 .contactEmail {
-    background-color: yellow;
+    /*background-color: yellow;*/
     grid-area: contactEmail;
 }
 
 .contactSubject {
-    background-color: lime;
+    /*background-color: lime;*/
     grid-area: contactSubject;
 }
 
@@ -683,6 +698,25 @@ img {
     background-color: blueviolet;
     grid-area: socialMedia;
 
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;         
+    padding: 10px;      
+    margin: 8px 0;       
+    border: 1px solid white;  
+    background-color: black;
+    color: white;
+    border-radius: 5px;  /* Rounded corners */
+    font-size: 16px;     
+}
+
+textarea {
+    height: 90%;
+}
+
+::placeholder {
+    color: white;
 }
 
 /*Desktop view*/
