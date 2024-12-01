@@ -690,7 +690,8 @@ img {
 }
 
 .contactSubmitButton {
-    background-color: aqua;
+    /*background-color: aqua;*/
+    text-align: center;
     grid-area: contactSubmitButton;
 }
 
@@ -706,6 +707,7 @@ input[type="text"], input[type="email"], textarea {
     margin: 8px 0;       
     border: 1px solid white;  
     background-color: black;
+    outline: none;
     color: white;
     border-radius: 5px;  /* Rounded corners */
     font-size: 16px;     
@@ -717,6 +719,22 @@ textarea {
 
 ::placeholder {
     color: white;
+}
+
+.submitButton {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    width: 150px;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+    /*margin-top: 10px;*/
+    margin: 10px 0 0 0;
+    background-color: #059DB9;
+    font-weight: bold;
+    /*border: 1px solid red;*/
+    justify-content: center;
 }
 
 /*Desktop view*/
