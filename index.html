@@ -28,7 +28,7 @@
                     </div>
                 </div>
                 <div>
-                    <a href="#openMenu">
+                    <a href="#openMenu" id="hamburger">
                         <img class="hamburger" src="./images/hamburger.png" alt="Hamburger Icon">
                     </a>
                 </div>
@@ -75,27 +75,34 @@
 
         <main class="pageContent">
 
-           
-                    <div class="gridContainer">
-                        <div class="box title">
-                            <h1 class="sectionHeader">Hi, I'm Yulia the dancing web developer</h1>
-                        </div>
-                        <div class="box image gridItem">
-                           <!-- <img src="./images/profilePhoto.jpg" width="200px" alt="Yulia's Profile Photo">-->
+            <div class="gridContainer">
+                <div class="box title">
+                    <h1 class="sectionHeader">Hi, I'm Yulia the dancing web developer</h1>
+                </div>
+                <div class="box image gridItem">
 
-                            <img src="./images/profilePhoto.jpg"  alt="Yulia's Profile Photo">
-                        </div>
-                        <div class="box text">I'm a web developer with a passion for creating dynamic, user-friendly websites. I love life and people, which shines through in the way I approach both my work and my relationships. Whether I’m collaborating on projects or connecting with others, I bring a creative energy to every conversation. My goal is to build online experiences that bring people together, just like I do in real life!</div>
-                        <div class="box button buttonDiv">
-                            <h5><a class="downloadCVButton"
-                                href="https://drive.google.com/file/d/1P0cFmFL7i35luQsRu8MQRWSwsBGfKFJL/view?usp=sharing"
-                                target="_blank">DOWNLOAD CV</a></h5>
-                        </div>
-                    </div>
-            <!--</div>-->
+                    <img src="./images/profilePhoto.jpg" alt="Yulia's Profile Photo">
+                </div>
+                <div class="box text">I'm a web developer with a passion for creating dynamic, user-friendly websites. I
+                    love life and people, which shines through in the way I approach both my work and my relationships.
+                    Whether I’m collaborating on projects or connecting with others, I bring a creative energy to every
+                    conversation. My goal is to build online experiences that bring people together, just like I do in
+                    real life!</div>
+                <div class="box button buttonDiv">
+                    <h5><a class="downloadCVButton"
+                            href="https://drive.google.com/file/d/1P0cFmFL7i35luQsRu8MQRWSwsBGfKFJL/view?usp=sharing"
+                            target="_blank">DOWNLOAD CV</a></h5>
+                </div>
+            </div>
         </main>
     </div>
-    <!--<script src="script.js"></script>-->
+   <!-- <script>
+        document.getElementById('hamburger').addEventListener('click', function (event) {
+            event.preventDefault();
+            document.getElementById('openMenu').classList.toggle('hide');
+        })
+    </script>-->
+    <script src="script.js"></script>
 </body>
 
 </html>

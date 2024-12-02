@@ -60,9 +60,10 @@ body {
     height: 250px;
     border: 1px solid #059DB9;
     border-radius: 10px;
-    position: absolute;
-    top: 70px;
-    left: 20%;
+    /* position: absolute; */
+    /* top: 70px;
+    left: 20%; */
+    margin: 0 auto;
     align-content: center;
     text-align: center;
     line-height: 25px;
@@ -110,8 +111,16 @@ body {
     font-weight: bold;
 }
 
-#openMenu:target {
+/* #openMenu:target {
     display: block;
+} */
+
+#openMenu {
+    display: block;
+}
+
+.hide{
+    display: none !important;
 }
 
 .navLinks {
