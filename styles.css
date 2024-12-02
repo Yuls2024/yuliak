@@ -466,7 +466,7 @@ img {
 .gridContainerSkills {
     display: grid;
     height: 60vh;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    /*grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;*/
     grid-template-rows: 0.3fr 1fr 1fr;
     grid-template-areas:
         "skillsTitle skillsTitle skillsTitle skillsTitle skillsTitle skillsTitle"
@@ -481,14 +481,16 @@ img {
 .skillsTitle {
     font-size: 16px;
     text-transform: uppercase;
-    background-color: purple;
+    /*background-color: purple;*/
     width: 100%;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     grid-area: skillsTitle;
 }
 
 .educationBox, .skillsBox, .toolsBox {
-    width: 300px;
+    /*width: 300px;*/
+    width: 100%;
+    min-width: 300px;
     height: 250px;
     border: 1px solid white;
     padding: 20px auto;
@@ -514,35 +516,35 @@ img {
     font-size: 18px;
     color: white;
     /*padding: 10px 0;*/
-    border: 1px solid yellow;
+    /*border: 1px solid yellow;*/
 }
 
 .skillsEducation {
-    background-color: red;
+    /*background-color: red;*/
     justify-content: center;
     margin: 0 auto;
     grid-area: skillsEducation;
 }
 
 .skillsSkills {
-    background-color: orange;
+    /*background-color: orange;*/
     margin: 0 auto;
     grid-area: skillsSkills;
 }
 
 .skillsTools {
-    background-color: pink;
+    /*background-color: pink;*/
     margin: 0 auto;
     grid-area: skillsTools;
 }
 
 .skillsRealWorld {
-    background-color: lime;
+    /*background-color: lime;*/
     grid-area: skillsRealWorld;
 }
 
 .skillsSchool {
-    background-color: aqua;
+    /*background-color: aqua;*/
     grid-area: skillsSchool;
 }
 
@@ -945,7 +947,7 @@ textarea {
 
     /*tablet*/    
    .skillsBox{
-        width: 630px;
+        width: 630px;/
     }
 
     /*Tablet Grid Container for the Portfolio page*/
@@ -1090,6 +1092,10 @@ textarea {
             "skillsSkills"
             "skillsRealWorld"
             "skillsSchool";
+    }
+
+    .educationBox, .toolsBox, .skillsBox, .realWorldBox, .schoolProjectBox {
+        width: 90vw;/
     }
 
     /*Mobile Grid Container for the Portfolio page*/
