@@ -376,6 +376,7 @@ img {
     height: 100%;
     object-fit: cover;
     border-radius: 35px;
+    border: 1px solid white;
 }
 
 .servicesImage01 {
@@ -517,6 +518,14 @@ img {
     color: white;
     /*padding: 10px 0;*/
     /*border: 1px solid yellow;*/
+}
+
+.realWorldContent a {
+    color: white;
+}
+
+.realWorldContent a:hover {
+    color: #059DB9;
 }
 
 .skillsEducation {
