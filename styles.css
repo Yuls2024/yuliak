@@ -716,9 +716,14 @@ img {
 }
 
 .socialMedia {
-    background-color: blueviolet;
+    /*background-color: blueviolet;*/
+    justify-self: end;
     grid-area: socialMedia;
 
+}
+
+.socialMediaIcon {
+    height: 44px;
 }
 
 .contactForm {
