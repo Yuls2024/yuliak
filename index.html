@@ -4,77 +4,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YK Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Home</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
-    <header>
-        <div>
-            <a href="index.html">
-                <img class="logo" src="./images/logoYK.jpg" alt="Logo">
-            </a>
-        </div>
-        <nav class="navContainer">
-           
-            <div>
-                <a href="#openMenu"><img class="hamburger" src="./images/hamburger.png" alt="Hamburger Icon">
-                </a>
-            </div>
-            <div id="openMenu" class="desktopMenu tabletMenu">
-                <ul class="navLinks tabletNavLinks">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Me</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+    <div class="webPageContainer">
+        <header>
+            <nav class="topNavigation">
+                <div class="tableMenuBarContainer">
+                    
+                    <div class="logoContainer">
+                        <a href="index.html">
+                            <img class="logo" src="./images/logoYK.jpg" alt="Logo">
+                        </a>
+                    </div>
+               
+                    <div class="tabletMenu">
+                        <ul class="navLinks navLinksTablet">
+                            <li class="tabletButton menuButton"><a href="index.html">Home</a></li>
+                            <li class="tabletButton menuButton"><a href="about.html">About Me</a></li>
+                            <li class="tabletButton menuButton"><a href="services.html">Services</a></li>
+                            <li class="tabletButton menuButton"><a href="skills.html">Skills</a></li>
+                            <li class="tabletButton menuButton"><a href="portfolio.html">Portfolio</a></li>
+                            <li class="tabletButton menuButton"><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <a href="#openMenu" id="hamburger">
+                        <img class="hamburger" src="./images/hamburger.png" alt="Hamburger Icon">
+                    </a>
+                </div>
+            </nav>
+            <div class="desktopMenu">
+                <ul class="navLinks navLinksDesktop">
+                    <li class="desktopButton menuButton">
+                        <img class="desktopButtorDecor" src="./images/buttonDecor.jpg" alt="Button Decoration">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="desktopButton menuButton">
+                        <img class="desktopButtorDecor" src="./images/buttonDecor.jpg" alt="Button Decoration">
+                        <a href="about.html">About Me</a>
+                    </li>
+                    <li class="desktopButton menuButton">
+                        <img class="desktopButtorDecor" src="./images/buttonDecor.jpg" alt="Button Decoration">
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li class="desktopButton menuButton">
+                        <img class="desktopButtorDecor" src="./images/buttonDecor.jpg" alt="Button Decoration">
+                        <a href="skills.html">Skills</a>
+                    </li>
+                    <li class="desktopButton menuButton">
+                        <img class="desktopButtorDecor" src="./images/buttonDecor.jpg" alt="Button Decoration">
+                        <a href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="desktopButton menuButton">
+                        <img class="desktopButtorDecor" src="./images/buttonDecor.jpg" alt="Button Decoration">
+                        <a href="contact.html">Contact</a>
+                    </li>
                 </ul>
             </div>
-        </nav>
+            <div id="openMenu" class="mobileMenu">
+                <ul class="navLinks navLinksDesktop">
+                    <li class="mobileButton menuButton"><a href="index.html">Home</a></li>
+                    <li class="mobileButton menuButton"><a href="about.html">About Me</a></li>
+                    <li class="mobileButton menuButton"><a href="services.html">Services</a></li>
+                    <li class="mobileButton menuButton"><a href="skills.html">Skills</a></li>
+                    <li class="mobileButton menuButton"><a href="portfolio.html">Portfolio</a></li>
+                    <li class="mobileButton menuButton"><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </header>
 
+        <main class="pageContent">
 
-        
-       <!--<div id="openMenu" class="dropdownMenu">
-            <ul class="navLinks">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>-->
-       <!-- <div id="openMenu" class="tabletMenu">
-            <ul class="navLinks">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>-->
-    </header>
-   <!-- <main class="pageContainer">
-        <div>
-            <h1 class="sectionHeader">Hi, I'm Yulia the dancing web developer</h1>
-        </div>
-        <div>
-            <img class="mainProfilePhoto" src="./images/profilePhoto.jpg" alt="Yulia's Profile Photo">
-        </div>
-        <div class="text">
-            <p>I'm a web developer with a passion for creating dynamic, user-friendly websites. I love life and people,
-                which shines through in the way I approach both my work and my relationships. Whether I’m collaborating
-                on projects or connecting with others, I bring a creative energy to every conversation. My goal is to
-                build online experiences that bring people together, just like I do in real life!</p>
-        </div>
-        <div class="buttonDiv">
-            <h5><a class="downloadCVButton"
-                    href="https://drive.google.com/file/d/1P0cFmFL7i35luQsRu8MQRWSwsBGfKFJL/view?usp=sharing"
-                    target="_blank">DOWNLOAD CV</a></h5>
-        </div>
-    </main>-->
+            <div class="gridContainer">
+                <div class="box title">
+                    <h1 class="sectionHeader">Hi, I'm Yulia the dancing web developer</h1>
+                </div>
+                <div class="box image gridItem">
+
+                    <img src="./images/profilePhoto.jpg" alt="Yulia's Profile Photo">
+                </div>
+                <div class="box text">I'm a web developer with a passion for creating dynamic, user-friendly websites. I
+                    love life and people, which shines through in the way I approach both my work and my relationships.
+                    Whether I’m collaborating on projects or connecting with others, I bring a creative energy to every
+                    conversation. My goal is to build online experiences that bring people together, just like I do in
+                    real life!</div>
+                <div class="box button buttonDiv">
+                    <h5><a class="downloadCVButton"
+                            href="https://drive.google.com/file/d/16xwycKPCh7MRvMdvn0q4gQeKJ3M6g2mL/view?usp=drive_link"
+                            target="_blank">DOWNLOAD CV</a></h5>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!-- <script>
+        document.getElementById('hamburger').addEventListener('click', function (event) {
+            event.preventDefault();
+            document.getElementById('openMenu').classList.toggle('hide');
+        })
+    </script>-->
+    <script src="script.js"></script>
 </body>
 
 </html>
