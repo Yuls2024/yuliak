@@ -1112,6 +1112,14 @@ textarea {
         width: 90vw;/
     }
 
+    .skillsHeader {
+        font-size: 23px;
+    }
+
+    .educationContent, .skillsContent, .toolsContent, .realWorldContent, .schoolProjectContent {
+        font-size: 15px;
+    }
+
     /*Mobile Grid Container for the Portfolio page*/
     .gridContainerPortfolio {
         grid-template-columns: 1fr;
